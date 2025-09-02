@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Xhopii - Loja de camisetas para desenvolvedores"
+    />
+    <link rel="stylesheet" href="../src/css/PaginaProduto.css" />
+    <title>Xhopii</title>
+  </head>
+  <body>
+    <header id="top" role="banner">
+      <img src="../src/img/logo.png" alt="Logo da Xhopii" />
+      <h1 id="title">Xhopii</h1>
+    </header>
+
+    <nav id="menu" aria-label="Menu principal">
+      <ul role="menubar">
+        <li role="none"><a href="#" role="menuitem">Home</a></li>
+        <li role="none">
+          <a href="../view/CadastrarCliente.html" role="menuitem"
+            >Cadastrar Client</a
+          >
+        </li>
+        <li role="none">
+          <a href="#" role="menuitem">Cadastrar Funcionário</a>
+        </li>
+        <li role="none">
+          <a href="../view/CadastrarProduto.html" role="menuitem"
+            >Cadastrar Produtos</a
+          >
+        </li>
+        <li role="none"><a href="#" role="menuitem">Ver Client</a></li>
+        <li role="none"><a href="#" role="menuitem">Ver Funcionários</a></li>
+        <li role="none"><a href="#" role="menuitem">Ver Produtos</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section aria-labelledby="product-title">
+        <nav id="produtos" aria-label="Miniaturas do produto">
+          <button
+            onclick="TrocarProduto('preto')"
+            aria-label="Visualizar produto 1"
+          >
+            <img src="../src/img/produto1.png" alt="Miniatura do produto 1" />
+          </button>
+          <button
+            onclick="TrocarProduto('azul')"
+            aria-label="Visualizar produto 2"
+          >
+            <img src="../src/img/produto2.png" alt="Miniatura do produto 2" />
+          </button>
+          <button
+            onclick="TrocarProduto('verde')"
+            aria-label="Visualizar produto 3"
+          >
+            <img src="../src/img/produto3.png" alt="Miniatura do produto 3" />
+          </button>
+          <button
+            onclick="TrocarProduto('cinza')"
+            aria-label="Visualizar produto 4"
+          >
+            <img src="../src/img/produto4.png" alt="Miniatura do produto 4" />
+          </button>
+          <button
+            onclick="TrocarProduto('rosa')"
+            aria-label="Visualizar produto 5"
+          >
+            <img src="../src/img/produto5.png" alt="Miniatura do produto 5" />
+          </button>
+        </nav>
+
+        <figure aria-labelledby="product-title">
+          <img
+            src="../src/img/produto1.png"
+            alt="Camisa Desenvolvedor Front-End CSS - Vista frontal"
+            id="res"
+          />
+        </figure>
+
+        <aside id="descrição" aria-labelledby="product-title">
+          <h1 id="product-title">Camisa Desenvolvedor Front-End CSS</h1>
+          <h2>R$ 59,90</h2>
+
+          <p>
+            <span class="visually-hidden">Quantidade em estoque:</span>171 peças
+          </p>
+
+          <fieldset>
+            <legend>Modelos:</legend>
+            <div role="group">
+              <input
+                type="radio"
+                id="modelo-preto"
+                name="modelo"
+                value="preto"
+              />
+              <label for="modelo-preto" onclick="selecionarModelo('preto')"
+                >Preta</label
+              >
+
+              <input type="radio" id="modelo-azul" name="modelo" value="azul" />
+              <label for="modelo-azul" onclick="selecionarModelo('azul')"
+                >Azul</label
+              >
+
+              <input
+                type="radio"
+                id="modelo-verde"
+                name="modelo"
+                value="verde"
+              />
+              <label for="modelo-verde" onclick="selecionarModelo('verde')"
+                >Verde</label
+              >
+
+              <input
+                type="radio"
+                id="modelo-cinza"
+                name="modelo"
+                value="cinza"
+              />
+              <label for="modelo-cinza" onclick="selecionarModelo('cinza')"
+                >Cinza</label
+              >
+
+              <input type="radio" id="modelo-rosa" name="modelo" value="rosa" />
+              <label for="modelo-rosa" onclick="selecionarModelo('rosa')"
+                >Rosa</label
+              >
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Tamanho:</legend>
+            <div role="group">
+              <input type="radio" id="tamanho-p" name="tamanho" value="p" />
+              <label for="tamanho-p" onclick="atualizarTamanhoSelecionado('P')"
+                >P</label
+              >
+
+              <input type="radio" id="tamanho-m" name="tamanho" value="m" />
+              <label for="tamanho-m" onclick="atualizarTamanhoSelecionado('M')"
+                >M</label
+              >
+
+              <input type="radio" id="tamanho-g" name="tamanho" value="g" />
+              <label for="tamanho-g" onclick="atualizarTamanhoSelecionado('G')"
+                >G</label
+              >
+
+              <input type="radio" id="tamanho-gg" name="tamanho" value="gg" />
+              <label
+                for="tamanho-gg"
+                onclick="atualizarTamanhoSelecionado('GG')"
+                >GG</label
+              >
+            </div>
+          </fieldset>
+
+          <p>
+            Tamanho Selecionado: <span id="tamanho-selecionado">Nenhum</span>
+          </p>
+
+          <button
+            aria-label="Comprar agora - Camisa Desenvolvedor Front-End CSS"
+          >
+            Comprar Agora
+          </button>
+        </aside>
+      </section>
+    </main>
+
+    <script src="../src/js/PaginaProduto.js"></script>
+  </body>
+</html>

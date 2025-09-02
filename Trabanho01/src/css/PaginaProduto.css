@@ -1,0 +1,184 @@
+:root {
+  --header: #ef5d19;
+  --header0: #c14b14;
+  --menu: #d6d6d6;
+  --txt0: #ec6969;
+  --txt1: #26328d;
+  --txt2: #454c82;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+#top {
+  background-color: var(--header);
+  width: 100vw;
+  height: 65px;
+  display: flex;
+  align-items: center;
+}
+
+#title {
+  color: #ffffff;
+  font-size: 45px;
+  margin-left: 10px;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+}
+
+#menu {
+  background-color: var(--menu);
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu ul {
+  display: flex;
+  justify-content: center;
+  height: 80%;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu ul li {
+  height: 80%;
+  display: flex;
+  align-items: center;
+}
+
+#menu ul a {
+  color: var(--txt0);
+  text-decoration: none;
+  padding: 10px 15px;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+#menu ul a:hover {
+  background-color: #fff;
+  height: 2.1vw;
+  border-radius: 10px;
+  color: var(--txt0);
+}
+
+main {
+  margin-top: 5%;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+#produtos {
+  display: flex;
+  flex-direction: column;
+}
+
+#produtos button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+#produtos img {
+  width: 150px;
+  height: 150px;
+}
+
+#produtos button:hover img {
+  border: 1px solid #000000;
+  padding: 4px;
+}
+
+section img {
+  width: 750px;
+  height: 750px;
+}
+
+#descrição h1 {
+  font-size: 35px;
+  color: var(--txt1);
+}
+
+#descrição h2 {
+  font-size: 35px;
+  margin-top: 15px;
+  color: var(--txt0);
+}
+
+#descrição p {
+  color: var(--txt2);
+  font-size: 17px;
+  margin: 18px;
+}
+
+fieldset {
+  border: none;
+  margin: 18px;
+  padding: 0;
+}
+
+legend {
+  color: var(--txt2);
+  font-size: 17px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#descrição input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+#descrição label {
+  color: var(--txt2);
+  font-size: 15px;
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #ffff;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#descrição label:hover {
+  background-color: #c9c9c9;
+  color: #373c64;
+}
+
+#descrição input[type="radio"]:checked + label {
+  border: 1px solid #000000;
+  background-color: #ffff;
+  color: var(--txt2);
+}
+
+#descrição button {
+  padding: 20px 10px;
+  background: var(--header);
+  color: #ffffff;
+  margin-right: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#descrição button:hover {
+  background: var(--header0);
+  color: #c5c5c5;
+}
