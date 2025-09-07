@@ -1,5 +1,5 @@
 :root {
-  --corpo: #dedddd;
+  --corpo: #bdbdbd;
   --header: #ef5d19;
   --header0: #f7793f;
   --header1: #cb5119;
@@ -221,6 +221,58 @@ button {
 }
 
 button:hover {
-  color: #b6b6b6;
+  color: #e4e4e4;
   background-color: var(--header1);
+}
+
+footer {
+  background: #f0f0f0;
+  width: 100vw;
+  height: auto;
+}
+
+footer #footer-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer-content {
+  margin: 30px 40px;
+}
+
+.footer-content img {
+  width: 55px;
+  height: 35px;
+  margin: 2.5px;
+}
+
+#footer-img {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+#footer-img img {
+  width: 25px;
+  height: 25px;
+  margin: 3px;
+}
+
+#footer-cliente {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  margin-top: 30px;
+}
+
+#footer-cliente #qr-code {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+#footer-cliente img {
+  width: 70px;
+  height: 25px;
+  padding: 5px;
 }
