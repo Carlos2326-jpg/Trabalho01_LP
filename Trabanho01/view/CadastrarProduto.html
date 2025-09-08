@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/css/CadastrarCliente.css" />
+    <title>Xhopii - Cadastrar Produto</title>
+  </head>
+  <body>
+    <header id="top" role="banner">
+      <nav>
+        <img src="../src/img/logo.png" alt="Logo da Xhopii" />
+        <h1 id="title">Xhopii</h1>
+      </nav>
+      <a href=""><button>Sair</button></a>
+    </header>
+
+    <nav id="menu" aria-label="Menu principal">
+      <ul role="menubar">
+        <li role="none"><a href="#" role="menuitem">Home</a></li>
+        <li role="none">
+          <a href="../view/CadastrarCliente.html" role="menuitem"
+            >Cadastrar Cliente</a
+          >
+        </li>
+        <li role="none">
+          <a href="../view/CadastrarFuncionario.html" role="menuitem"
+            >Cadastrar Funcionário</a
+          >
+        </li>
+        <li role="none">
+          <a href="../view/CadastrarProduto.html" role="menuitem"
+            >Cadastrar Produtos</a
+          >
+        </li>
+        <li role="none"><a href="#" role="menuitem">Ver Cliente</a></li>
+        <li role="none"><a href="#" role="menuitem">Ver Funcionários</a></li>
+        <li role="none">
+          <a href="../view/VizualizarProduto.html" role="menuitem"
+            >Ver Produtos</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <article>
+      <nav id="dados">
+        <h1>Cadastrar Produto</h1>
+
+        <nav id="content">
+          <div class="input-group">
+            <input type="text" id="name" required />
+            <label for="name">Nome</label>
+          </div>
+
+          <div class="input-group">
+            <input type="text" id="sobrenome" required />
+            <label for="sobrenome">Sobrenome</label>
+          </div>
+
+          <div class="input-group">
+            <input type="text" id="cpf" required />
+            <label for="cpf">CPF</label>
+          </div>
+
+          <input type="date" id="data" required />
+
+          <div class="input-group">
+            <input type="text" id="telefone" required />
+            <label for="telefone">Telefone</label>
+          </div>
+
+          <div class="input-group">
+            <input type="email" id="email" required />
+            <label for="email">Email</label>
+          </div>
+
+          <div class="input-group">
+            <input type="password" id="senha" required />
+            <label for="senha">Senha</label>
+          </div>
+        </nav>
+
+        <h2>Selecionar foto perfil</h2>
+
+        <div id="div">
+          <label for="selecao-arquivo" id="input-file-label"
+            >Escolher arquivo</label
+          >
+          <input type="file" id="selecao-arquivo" class="input-file" />
+          <p>nenhum arquivo escolhido</p>
+        </div>
+
+        <button>Cadastrar</button>
+      </nav>
+    </article>
+
+    <footer>
+      <div id="footer-box">
+        <div class="footer-content">
+          <h4>ATENDIMENTO AO CLIENTE</h4>
+          <p>Central de Ajuda</p>
+          <p>Como Comprar</p>
+          <p>Métodos de Pagamento</p>
+          <p>Garantia Xhopil</p>
+          <p>Devolução e Reembolso</p>
+          <p>Fale Conosco</p>
+          <p>Perguntas Frequentes</p>
+        </div>
+
+        <div class="footer-content">
+          <h4>SOBRE A XHOPIL</h4>
+          <p>Sobre Nós</p>
+          <p>Políticas Xhopil</p>
+          <p>Política de Privacidade</p>
+          <p>Programa de Aliados da Xhopil</p>
+          <p>Seja um Entregador Xhopil</p>
+          <p>Ofertas Relâmpago</p>
+          <p>Xhopil Blog</p>
+          <p>Imprensa</p>
+        </div>
+
+        <div class="footer-content">
+          <h4>PAGAMENTO</h4>
+          <p>
+            <img src="../src/img/Pagamento-pix.jpg" alt="" />
+            <img src="../src/img/Pagamento-boleto.png" alt="" />
+            <img src="../src/img/Pagamento-AM.png" alt="" />
+          </p>
+          <p>
+            <img src="../src/img/Pagamento-Visa.png" alt="" />
+            <img src="../src/img/Pagamento-Mastercard.png" alt="" />
+            <img src="../src/img/Pagamento-Hipercard.png" alt="" />
+          </p>
+          <img src="../src/img/Pagamento-ELC.png" alt="" />
+        </div>
+
+        <div id="footer-img">
+          <h4>SIGA-NOS</h4>
+          <p><img src="../src/img/Logo-instagram.jpg" alt="" />instagram</p>
+          <p><img src="../src/img/Logo-twitter.png" alt="" />twitter</p>
+          <p><img src="../src/img/Logo-facebook.png" alt="" />facebook</p>
+          <p><img src="../src/img/Logo-youtube.png" alt="" />youtube</p>
+          <p><img src="../src/img/Logo-linkedin.png" alt="" />linkedin</p>
+        </div>
+
+        <div id="footer-cliente">
+          <h4>ATENDIMENTO AO CLIENTE</h4>
+          <img id="qr-code" src="../src/img/qr-code.png" alt="" />
+          <img src="../src/img/Logo-googleplay.png" alt="" />
+          <img src="../src/img/Logo-appstore.png" alt="" />
+        </div>
+      </div>
+
+      <hr />
+
+      <div id="footer-bottom">
+        <p>© 2023 Xhopii. Todos os direitos reservados</p>
+      </div>
+    </footer>
+  </body>
+</html>
