@@ -32,12 +32,22 @@
           <a href="../view/CadastrarProduto.html" role="menuitem"
             >Cadastrar Produtos</a
           >
+         <li role="none">
+          <a href="../view/CadastrarLoja.html" role="menuitem"
+            >Cadastrar Loja</a
+          >
+        </li>   
         </li>
         <li role="none"><a href="#" role="menuitem">Ver Cliente</a></li>
         <li role="none"><a href="#" role="menuitem">Ver Funcionários</a></li>
         <li role="none">
           <a href="../view/VizualizarProduto.html" role="menuitem">
             Ver Produtos</a
+          >
+        </li>
+        <li role="none">
+          <a href="../view/VizualizarLoja.html" role="menuitem">
+            Ver Loja</a
           >
         </li>
       </ul>
@@ -48,56 +58,63 @@
         <h1>Cadastrar Produto</h1>
 
         <nav id="content">
-          <div class="input-group">
-            <input type="text" id="name" required />
-            <label for="name">Nome</label>
-          </div>
+          <section class="input-group">
+            <input type="text" id="nameE" required />
+            <label for="name">Nome Empresa</label>
+          </section>
 
-          <div class="input-group">
-            <input type="text" id="sobrenome" required />
-            <label for="sobrenome">Sobrenome</label>
-          </div>
+          <section class="input-group">
+            <input type="text" id="nameP" required />
+            <label for="sobrenome">Nome Popular</label>
+          </section>
 
-          <div class="input-group">
-            <input type="text" id="cpf" required />
-            <label for="cpf">CPF</label>
-          </div>
+          <section class="input-group">
+            <input type="text" id="cnpj" required />
+            <label for="cpf">CNPJ</label>
+          </section>
 
-          <input type="date" id="data" required />
+          <section class="input-group">
+            <input type="text" id="inscriçãoEstadual" required />
+            <label for="telefone">Inscrição Estadual (IE)</label>
+          </section>
 
-          <div class="input-group">
-            <input type="text" id="telefone" required />
-            <label for="telefone">Telefone</label>
-          </div>
+          <section class="input-group">
+            <input type="email" id="inscriçãoMunicipal" required />
+            <label for="email">Inscrição Municipal</label>
+          </section>
 
-          <div class="input-group">
-            <input type="email" id="email" required />
-            <label for="email">Email</label>
-          </div>
+          <section class="input-group">
+            <input type="date" name="" id="" />
+          </section>
 
-          <div class="input-group">
-            <input type="password" id="senha" required />
-            <label for="senha">Senha</label>
-          </div>
+          <section class="input-group">
+            <input type="email" id="iteEmpresa" required />
+            <label for="email">Site da Empresa</label>
+          </section>
+
+          <section class="input-group">
+            <input type="email" id="descricaoAtividade" required />
+            <label for="email">Descrição da Atividade</label>
+          </section>
         </nav>
 
         <h2>Selecionar foto perfil</h2>
 
-        <div id="div">
+        <nav id="div">
           <label for="selecao-arquivo" id="input-file-label"
             >Escolher arquivo</label
           >
           <input type="file" id="selecao-arquivo" class="input-file" />
           <p>nenhum arquivo escolhido</p>
-        </div>
+        </nav>
 
         <button>Cadastrar</button>
       </nav>
     </article>
 
     <footer>
-      <div id="footer-box">
-        <div class="footer-content">
+      <section id="footer-box">
+        <section class="footer-content">
           <h4>ATENDIMENTO AO CLIENTE</h4>
           <p>Central de Ajuda</p>
           <p>Como Comprar</p>
@@ -106,9 +123,9 @@
           <p>Devolução e Reembolso</p>
           <p>Fale Conosco</p>
           <p>Perguntas Frequentes</p>
-        </div>
+        </section>
 
-        <div class="footer-content">
+        <section class="footer-content">
           <h4>SOBRE A XHOPIL</h4>
           <p>Sobre Nós</p>
           <p>Políticas Xhopil</p>
@@ -118,9 +135,9 @@
           <p>Ofertas Relâmpago</p>
           <p>Xhopil Blog</p>
           <p>Imprensa</p>
-        </div>
+        </section>
 
-        <div class="footer-content">
+        <section class="footer-content">
           <h4>PAGAMENTO</h4>
           <p>
             <img src="../src/img/Pagamento-pix.jpg" alt="" />
@@ -133,24 +150,24 @@
             <img src="../src/img/Pagamento-Hipercard.png" alt="" />
           </p>
           <img src="../src/img/Pagamento-ELC.png" alt="" />
-        </div>
+        </section>
 
-        <div id="footer-img">
+        <section id="footer-img">
           <h4>SIGA-NOS</h4>
           <p><img src="../src/img/Logo-instagram.jpg" alt="" />instagram</p>
           <p><img src="../src/img/Logo-twitter.png" alt="" />twitter</p>
           <p><img src="../src/img/Logo-facebook.png" alt="" />facebook</p>
           <p><img src="../src/img/Logo-youtube.png" alt="" />youtube</p>
           <p><img src="../src/img/Logo-linkedin.png" alt="" />linkedin</p>
-        </div>
+        </section>
 
-        <div id="footer-cliente">
+        <section id="footer-cliente">
           <h4>ATENDIMENTO AO CLIENTE</h4>
           <img id="qr-code" src="../src/img/qr-code.png" alt="" />
           <img src="../src/img/Logo-googleplay.png" alt="" />
           <img src="../src/img/Logo-appstore.png" alt="" />
-        </div>
-      </div>
+        </section>
+      </section>
 
       <hr />
 

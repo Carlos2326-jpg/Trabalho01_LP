@@ -33,12 +33,20 @@
             >Cadastrar Produtos</a
           >
         </li>
+        <li role="none">
+          <a href="../view/CadastrarLoja.html" role="menuitem"
+            >Cadastrar Loja</a
+          >
+        </li>
         <li role="none"><a href="#" role="menuitem">Ver Cliente</a></li>
         <li role="none"><a href="#" role="menuitem">Ver Funcionários</a></li>
         <li role="none">
           <a href="../view/VizualizarProduto.html" role="menuitem">
             Ver Produtos</a
           >
+        </li>
+        <li role="none">
+          <a href="../view/VizualizarLoja.html" role="menuitem"> Ver Loja</a>
         </li>
       </ul>
     </nav>
@@ -48,40 +56,40 @@
         <h1>Cadastrar Produto</h1>
 
         <nav id="content">
-          <div class="input-group">
+          <section class="input-group">
             <input type="text" id="name" required />
             <label for="name">Nome</label>
-          </div>
+          </section>
 
-          <div class="input-group">
+          <section class="input-group">
             <input type="text" id="fabricante" required />
             <label for="name">Fabricante</label>
-          </div>
+          </section>
 
-          <div class="input-group">
+          <section class="input-group">
             <input type="text" id="descricao" required />
             <label for="name">Desecrição</label>
-          </div>
+          </section>
 
-          <div class="input-group">
+          <section class="input-group">
             <input type="text" id="valor" required />
             <label for="name">Valor</label>
-          </div>
+          </section>
 
-          <div class="input-group">
+          <section class="input-group">
             <input type="text" id="Quantidade" required />
             <label for="name">Quantidade</label>
-          </div>
+          </section>
         </nav>
         <h2>Selecionar foto perfil</h2>
 
-        <div id="div">
+        <nav id="div">
           <label for="selecao-arquivo" id="input-file-label"
             >Escolher arquivo</label
           >
           <input type="file" id="selecao-arquivo" class="input-file" />
           <p>nenhum arquivo escolhido</p>
-        </div>
+        </nav>
 
         <button>Cadastrar</button>
       </nav>
