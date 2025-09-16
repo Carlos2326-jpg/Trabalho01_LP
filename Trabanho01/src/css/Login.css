@@ -1,0 +1,290 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ff5722;
+    overflow-x: hidden;
+}
+
+header{
+    height: 85px;
+    width: 100%;
+    background-color: #ddd;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    height: 60px;
+    width: 60px;
+    margin-left: 100px;
+}
+
+header h1 {
+    color: rgb(251,86,48);
+    font-size: 30px;
+}
+
+header h2 {
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+header a {
+    color: rgb(251,86,48);
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 100px;
+    transition: color, 0.5s;
+}
+
+header a:hover {
+    color: #e64a1f;
+}
+
+.main-content {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0px 35px #0006;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-title {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    font-weight: 450;
+    color: #333;
+}
+
+.input-field {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: outline 0.3s;
+    outline: 0;
+    outline-offset: 0;
+}
+
+.input-field:hover {
+    outline: 1px solid #888;
+    outline-offset: -2px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, outiline 0.7s;
+    outline: 0;
+    outline-offset: 0;
+}
+
+.login-button:hover {
+    background-color: #e64a1d;
+    color: #ddd;
+    outline: 2px solid #444;
+    outline-offset: -2px;
+}
+
+.links-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #008;
+}
+
+.divider {
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+    color: #aaa;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    border-top: 1px solid #ddd;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.login-block__social-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    margin: 30px 0;
+}
+
+.social-button {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: #000;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.social-button__logo {
+    height: 20px; 
+    width: auto;
+    margin-right: 12px; 
+}
+
+.social-button:hover {
+    background-color: #f0f0f0;
+    border-color: #888;
+}
+
+.signup-text {
+    color: #888;
+}
+
+.signup-btn {
+    color: #ff5722;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-btn:hover {
+    text-decoration: underline;
+    color: #e64a1d;
+}
+
+footer {
+    background: #f0f0f0;
+    width: 100vw;
+    height: auto;
+}
+
+footer #footer-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-content {
+    margin: 30px 40px;
+}
+
+.footer-content img {
+    width: 40px;
+    height: 25px;
+    margin: 2.5px;
+}
+
+#footer-img {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#footer-img img {
+    width: 25px;
+    height: 25px;
+    margin: 3px;
+}
+
+p {
+    color: #808080c5;
+}
+
+#footer-cliente {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+    margin-top: 30px;
+}
+
+#footer-cliente #qr-code {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+#footer-cliente img {
+    width: 75px;
+    height: 30px;
+    padding: 5px;
+}
+
+hr {
+    width: 70%;
+    margin-left: 15%;
+}
+
+#footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    footer #footer-box {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .footer-content {
+        margin: 10px 0; 
+        text-align: center;
+    }
+
+    #footer-img, #footer-cliente {
+        margin-left: 0; 
+        margin-top: 0;
+    }
+
+    #footer-cliente img {
+        margin: auto;
+    }
+}
