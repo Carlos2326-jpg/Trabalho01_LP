@@ -3,51 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/css/Login.css">
-    <title>Xhopii - Login</title>
+    <link rel="stylesheet" href="../src/css/RedefinirSenha.css">
+    <title>Xhopii - Redefinir Senha</title>
 </head>
 <body>
     <header>
         <img src="../src/img/logo.png" alt="Logo da Xhopii">
         <h1>Xhopii</h1>
-        <h2>Entre</h2>
+        <h2>Redefinir Senha</h2>
         <a href="#">Precisa de ajuda?</a>
     </header>
 
     <main class="main-content">
-        <section class="login-container">
-            <h2 class="login-title">Login</h2>
-            <form class="login-form">
-                <input type="email" placeholder="Email" class="input-field">
-                <input type="password" placeholder="Senha" class="input-field">
-                <a class="login-button" href="Home.html">ENTRE</a>
+        <section class="password-container">
+            <a class="back-link" href="Login.html">
+                <img src="../src/img/icon-back.png" alt="seta de retorno">
+            </a>
+            <h2 class="password-title">Redefinir Senha</h2>
+            <form class="password-form">
+                <input type="password" placeholder="Senha" class="input-field" required>
+                <a class="password-button" href="Home.html">ENVIAR</a>
             </form>
-            <section class="links-section">
-                <a href="RedefinirSenha.html" class="link">Esqueci minha senha</a>
-                <a href="#" class="link">Fazer login com SMS</a>
-            </section>
-            <section class="divider">
-                <span>OU</span>
-            </section>
-            
-            <section class="login-block__social-buttons">
-                <button class="social-button social-button--facebook">
-                    <img src="../src/img/facebook.png" alt="Logo Facebook" class="social-button__logo"> Facebook
-                </button>
-                <button class="social-button social-button--google">
-                    <img src="../src/img/google.png" alt="Logo Google" class="social-button__logo"> Google
-                </button>
-                <button class="social-button social-button--apple">
-                    <img src="../src/img/apple.png" alt="Logo Apple" class="social-button__logo"> Apple
-                </button>
-            </section>
-
-            <section class="signup-link">
-                <span class="signup-text">Novo na Xhopii?</span>
-                <a href="#" class="signup-btn">Cadastrar</a>
-            </section>
         </section>
     </main>
+
     <footer>
     <section id="footer-box">
         <section class="footer-content">
