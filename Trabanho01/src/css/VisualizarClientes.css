@@ -3,6 +3,7 @@ body{
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     box-sizing: border-box;
     overflow-x: hidden;
+    background-color: #bdbdbd;
 }
 
 header{
@@ -23,8 +24,8 @@ header img {
 
 header h1 {
     color: #fff;
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 3rem;
+    font-weight: 700;
     margin-left: 10px;
     margin-right: auto;
 }
@@ -35,8 +36,8 @@ header a {
     text-decoration: none;
     font-size: 1.2rem;
     cursor: pointer;
-    margin-right: 10px;
     transition: color, 0.5s;
+    margin-right: 10px;
 }
 
 header a:hover {
@@ -74,94 +75,81 @@ header a:hover {
     color: #000;
 }
 
-#carouselExampleAutoplaying {
-    max-width: 80%;      
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    margin: 50px auto;
-}
-
-.carousel-inner img {
-    height: 350px;
-    object-fit: cover;
-}
-
-.promo-banner-container img {
-    min-width: 50%;
-    max-width: 75%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    margin: 50px auto;
-}
-
-.products-container{
+.main-content-customers {
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
 }
 
-.products-container h3 {
+.customers-section h3 {
     text-align: center;
-    font-size: 20px;
-    color: #ff5722;
+    font-weight: 700;
+    color: #f7793f;
     margin-bottom: 20px;
-    font-weight: 500;
-    border-bottom: 1px solid #fcd;
-    padding-bottom: 20px; 
 }
 
-.products-grid {
+.customers-grid-view {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     gap: 15px;
+    padding: 10px 0;
 }
 
-.product-card {
+.customer-item-card {
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 10px 10px 25px #0002;
+    border-radius: 4px;
+    box-shadow: 0 1px 10px #0005;
     padding: 15px;
-    text-align: center;
+    text-align: left; 
+    border: 1px solid transparent; 
+    transition: all 0.2s ease-in-out;
 }
 
-.product-card:hover{
+.customer-item-card:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     border: 1px solid #ef5d19;
     transform: translateY(-3px);
 }
 
-.product-card img {
+.customer-item-card img {
     width: 100%;
-    height: auto;
-    border-radius: 5px;
+    max-height: 100px; 
+    object-fit: contain; /* Garante que a imagem inteira seja visível */
     margin-bottom: 10px;
 }
 
-.product-name {
-    font-size: 14px;
-    font-weight: 500;
+.customer-name {
+    font-weight: bold;
+    font-size: 1rem;
     color: #333;
-    margin-bottom: 20px;
-}
-
-.product-details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 5px;
 }
 
-.product-price {
-    font-size: 15px;
-    font-weight: bold;
-    color: #ff5722;
+.customer-manufacturer {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 5px;
 }
 
-.product-stock {
-    font-size: 12px;
+.customer-description {
+    font-size: 0.8rem;
     color: #888;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Faz a descrição ocupar o espaço restante */
+}
+
+.customer-price-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px; /* Espaçamento acima do bloco de preço */
+}
+
+.customer-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ff5722;
 }
 
 footer {
