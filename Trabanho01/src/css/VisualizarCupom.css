@@ -75,28 +75,28 @@ header a:hover {
     color: #000;
 }
 
-.main-content-customers {
+.main-content-cupom {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
 }
 
-.customers-section h3 {
+.cupom-section h3 {
     text-align: center;
     font-weight: 700;
     color: #f7793f;
     margin-bottom: 20px;
 }
 
-.customers-grid-view {
+.cupom-grid-view {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     gap: 15px;
     padding: 10px 0;
 }
 
-.customer-item-card {
+.cupom-item-card {
     background-color: white;
     border-radius: 4px;
     box-shadow: 0 1px 10px #0005;
@@ -106,32 +106,33 @@ header a:hover {
     transition: all 0.2s ease-in-out;
 }
 
-.customer-item-card:hover {
+.cupom-item-card:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     border: 1px solid #ef5d19;
     transform: translateY(-3px);
 }
 
-.customer-item-card img {
+.cupom-item-card img {
     width: 100%;
     max-height: 100px; 
     object-fit: contain;
     margin-bottom: 10px;
 }
 
-.customer-name {
+.cupom-name {
     font-weight: bold;
     font-size: 1rem;
     color: #333;
     margin-bottom: 5px;
 }
 
-.customer-data {
+.cupom-data {
     font-size: 0.8rem;
     color: #888;
     margin-bottom: 15px;
-    flex-grow: 1; 
+    flex-grow: 1;
 }
+
 
 footer {
     background: #f0f0f0;
